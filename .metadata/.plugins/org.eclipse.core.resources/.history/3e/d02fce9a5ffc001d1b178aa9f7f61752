@@ -1,0 +1,31 @@
+package in.ashokit.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.ModelAndView;
+
+import in.ashokit.binding.Register;
+
+@Controller
+public class RegisterController {
+	
+	@RequestMapping("/rg")
+	public ModelAndView loadRegister()
+	{
+		ModelAndView mav=new ModelAndView();
+		mav.addObject("re", "Welcome To Registration");
+		mav.setViewName("register");
+		return mav;
+	}
+    
+	@RequestMapping("/register")
+	public ModelAndView handleRegister(Register reg)
+	{
+		System.out.println(reg);
+		ModelAndView mav=new ModelAndView();
+		//mav.addObject("re",reg);
+		mav.setViewName("register");
+		mav.addObject("rel",reg.getName()+" "+reg.getAddr()+" "+reg.getEmail()+" "+reg.getPhno()+" "+reg.getPwd());
+		return mav;
+	}
+}

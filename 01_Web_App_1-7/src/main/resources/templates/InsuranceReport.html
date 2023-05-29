@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>    
+    <title>Insurance Report Generation Page</title>
+    <link rel="icon" href="emoji.png">
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+    <div>
+        <h2>Insurance Report Generation</h2>
+        <form action="">
+         <p>
+            <label >Plan Name:</label>
+            <select name="" id="">
+                <option value="">Select Plan Name</option>
+                <option value="cash">Cash</option>
+                <option value="food">Food</option>
+                <option value="medical">Medical</option>
+                <option value="employment">Employment</option>
+            </select>
+            <label for="">Plan Status:</label>
+            <select name="" id="">
+                <option value="">Approved</option>
+                <option value="">Denied</option>
+                <option value="">Terminated</option>
+            </select>
+
+            <label for="">Gender:</label>
+            <select name="" id="">
+                <option value="">Male</option>
+                <option value="">Female</option>
+            </select>
+        </p>
+        <p>
+            <label for="">Start Date:</label>
+            <input type="date">
+            <label for="">End Date</label>
+            <input type="date">
+            <label for="">Search:</label>
+            <input type="text" list="search">
+            <datalist id="search">
+                <option value="cash">cash</option>
+                <option value="food">food</option>
+                <option value="medical">medical</option>
+                <option value="employment">employment</option>
+                <option value="approved">approved</option>
+                <option value="denied">denied</option>
+                <option value="terminated">terminated</option>
+                <option value="male">male</option>
+                <option value="female">female</option>
+                
+            </datalist>
+
+        </p>
+        <p>
+            <a href="searchResult.html">search results</a>
+        </p>
+        <p>
+            <label for="">Export:</label>
+            <a href="Excel.html">Excel</a>
+            <a href="Pdf.html">Pdf.html</a>
+        </p>
+        </form>
+    </div>
+</body>
+</html>
